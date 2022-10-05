@@ -1,0 +1,201 @@
+#jobdetails {
+  margin: 0 40px;
+  width: calc(100-40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .jobdetails-company {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1110px;
+
+    height: 140px;
+    margin-top: -40px;
+    background-color: #fff;
+    padding: 42px 40px 42px 0;
+    border-radius: 6px;
+    img {
+      height: 140px;
+      width: 140px;
+      object-fit: contain;
+      padding: 50px 30px;
+      border-radius: 6px 0 0 6px;
+    }
+
+    div {
+      flex-grow: 1;
+      margin-left: 40px;
+    }
+  }
+
+  .jobdetails-position {
+    margin-top: 32px;
+    margin-bottom: 80px;
+    padding: 48px;
+    border-radius: 6px;
+    max-width: 1110px;
+
+    .jobdetails-position-header {
+      position: relative;
+
+      .jobdetails-position-header-location {
+        font-weight: 700;
+        color: #5964e0;
+      }
+      a {
+        position: absolute;
+        right: 0;
+        top: 33%;
+      }
+    }
+
+    .jobdetails-desc {
+      margin-top: 40px;
+    }
+
+    h3 {
+      margin-top: 40px;
+      margin-bottom: 28px;
+    }
+
+    ol,
+    ul {
+      margin-top: 24px;
+    }
+
+    ul {
+      list-style: none; /* Remove default bullets */
+      padding-left: 16px;
+
+      li {
+        color: #6e8098;
+        padding: 6px 0;
+      }
+    }
+
+    ul li::before {
+      content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+      color: #5964e0; /* Change the color */
+      font-weight: bold; /* If you want it to be bold */
+      display: inline-block; /* Needed to add space between the bullet and the text */
+      width: 1em; /* Also needed for space (tweak if needed) */
+      margin-left: -1em; /* Also needed for space (tweak if needed) */
+    }
+
+    ol li {
+      counter-increment: list;
+      list-style-type: none;
+      position: relative;
+      margin-left: 16px;
+      padding: 6px 0;
+      padding-left: 26px;
+      color: #6e8098;
+    }
+
+    /* Output the numbers using the counter() function, but use a custom color, and position the numbers how we want */
+    ol li:before {
+      color: #5964e0;
+      content: counter(list);
+      left: -32px;
+      position: absolute;
+      text-align: right;
+      width: 26px;
+    }
+  }
+
+  .jobdetails-applyfooter {
+    height: 96px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .jobdetails-applyfooter-container {
+      margin: 0 auto;
+      max-width: 730px;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .jobdetails-applyfooter-position {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and(max-width:425px) {
+  #jobdetails {
+    .jobdetails-company {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 230px;
+      margin-top: -15px;
+      padding: 0 0 32px 0;
+      border-radius: 6px;
+      text-align: center;
+      img {
+        height: 50px;
+        width: 50px;
+        object-fit: contain;
+        padding: 19px 5px;
+        border-radius: 6px;
+        margin-top: -25px;
+      }
+
+      div {
+        flex-grow: 1;
+        margin-left: 0px;
+        padding-top: 24px;
+      }
+    }
+    .jobdetails-position {
+      margin-top: 32px;
+      margin-bottom: 80px;
+      padding: 48px;
+      border-radius: 6px;
+
+      .jobdetails-position-header {
+        position: initial;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+          font-size: 20px;
+        }
+
+        .jobdetails-position-header-location {
+          font-weight: 700;
+          color: #5964e0;
+        }
+        a {
+          position: initial;
+          padding-top: 50px;
+
+          button {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .jobdetails-applyfooter {
+      padding: 25px;
+      .jobdetails-applyfooter-container {
+        .jobdetails-applyfooter-position {
+          display: none;
+        }
+        a {
+          width: 100%;
+
+          .applyfooter-btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

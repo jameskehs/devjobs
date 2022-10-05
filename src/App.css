@@ -1,38 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 700;
+  color: #19202d;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #19202d;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #19202d;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #19202d;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #6e8098;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 100vw;
+  padding-bottom: 100px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.button1 {
+  background-color: #5964e0;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button1:hover {
+  background-color: #939bf4;
+  cursor: pointer;
 }
+
+#light {
+  background-color: #f4f6f8;
+}
+
+#light .button2 {
+  background-color: #5964e010;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 5px;
+  color: #5964e0;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#light .button2:hover {
+  background-color: #5964e035;
+  cursor: pointer;
+}
+
+#light .search {
+  background-color: #fff;
+}
+
+#light .search input[type="text"],
+#light .search label {
+  color: #19202d;
+}
+
+#light .search input[type="text"] ::-webkit-input-placeholder,
+#light .search label ::-webkit-input-placeholder {
+  color: #19202d50;
+}
+
+#light .search input[type="text"] :-ms-input-placeholder,
+#light .search label :-ms-input-placeholder {
+  color: #19202d50;
+}
+
+#light .search input[type="text"] ::-ms-input-placeholder,
+#light .search label ::-ms-input-placeholder {
+  color: #19202d50;
+}
+
+#light .search input[type="text"] ::placeholder,
+#light .search label ::placeholder {
+  color: #19202d50;
+}
+
+#light .filter-icon path {
+  fill: #6e8098;
+}
+
+#light .jobdetails-company,
+#light .jobdetails-position,
+#light .jobdetails-applyfooter {
+  background-color: #fff;
+}
+
+#light .jobdetails-company h1,
+#light .jobdetails-company h2,
+#light .jobdetails-company h3,
+#light .jobdetails-position h1,
+#light .jobdetails-position h2,
+#light .jobdetails-position h3,
+#light .jobdetails-applyfooter h1,
+#light .jobdetails-applyfooter h2,
+#light .jobdetails-applyfooter h3 {
+  color: #000;
+}
+
+#light .filterModal-container .filterModal {
+  background-color: #fff;
+  color: #000;
+}
+
+#dark {
+  background-color: #121721;
+}
+
+#dark .button2 {
+  background-color: #ffffff10;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+#dark .button2:hover {
+  background-color: #ffffff35;
+  cursor: pointer;
+}
+
+#dark .search {
+  background-color: #19202d;
+}
+
+#dark .search input[type="text"],
+#dark .search label {
+  color: #ffffff;
+}
+
+#dark .search input[type="text"] ::-webkit-input-placeholder,
+#dark .search label ::-webkit-input-placeholder {
+  color: #ffffff50;
+}
+
+#dark .search input[type="text"] :-ms-input-placeholder,
+#dark .search label :-ms-input-placeholder {
+  color: #ffffff50;
+}
+
+#dark .search input[type="text"] ::-ms-input-placeholder,
+#dark .search label ::-ms-input-placeholder {
+  color: #ffffff50;
+}
+
+#dark .search input[type="text"] ::placeholder,
+#dark .search label ::placeholder {
+  color: #ffffff50;
+}
+
+#dark .search .filter-icon path {
+  fill: #fff;
+}
+
+#dark .filterModal-container .filterModal {
+  background-color: #19202d;
+  color: #fff;
+}
+
+#dark #jobdetails .jobdetails-company,
+#dark #jobdetails .jobdetails-position,
+#dark #jobdetails .jobdetails-applyfooter {
+  background-color: #19202d;
+}
+
+#dark #jobdetails .jobdetails-company h1,
+#dark #jobdetails .jobdetails-company h2,
+#dark #jobdetails .jobdetails-company h3,
+#dark #jobdetails .jobdetails-position h1,
+#dark #jobdetails .jobdetails-position h2,
+#dark #jobdetails .jobdetails-position h3,
+#dark #jobdetails .jobdetails-applyfooter h1,
+#dark #jobdetails .jobdetails-applyfooter h2,
+#dark #jobdetails .jobdetails-applyfooter h3 {
+  color: #fff;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,40 @@
+.jobcard-link {
+  text-decoration: none;
+}
+
+.jobcard {
+  width: 325px;
+  height: 228px;
+  background-color: #fff;
+  margin: 65px 15px 0px 15px;
+  border-radius: 6px;
+  padding: 49px 32px 32px 32px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  .jobcard-img {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    position: absolute;
+    top: -25px;
+  }
+  .jobcard-contents {
+    flex-grow: 1;
+  }
+  .jobcard-location {
+    color: #5964e0;
+    font-weight: 700;
+  }
+
+  &:hover {
+    cursor: pointer;
+    h3 {
+      color: #6e8098;
+    }
+  }
+}

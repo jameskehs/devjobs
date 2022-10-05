@@ -1,0 +1,57 @@
+.jobcard-link {
+  text-decoration: none;
+}
+
+.jobcard {
+  width: 325px;
+  height: 228px;
+  background-color: #fff;
+  margin: 65px 15px 0px 15px;
+  border-radius: 6px;
+  padding: 49px 32px 32px 32px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.jobcard .jobcard-img {
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  position: absolute;
+  top: -25px;
+}
+
+.jobcard .jobcard-contents {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.jobcard .jobcard-location {
+  color: #5964e0;
+  font-weight: 700;
+}
+
+.jobcard:hover {
+  cursor: pointer;
+}
+
+.jobcard:hover h3 {
+  color: #6e8098;
+}
+/*# sourceMappingURL=JobCard.css.map */

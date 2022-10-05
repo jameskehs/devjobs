@@ -1,0 +1,242 @@
+#jobdetails {
+  margin: 0 40px;
+  width: calc(100-40px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#jobdetails .jobdetails-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 1110px;
+  height: 140px;
+  margin-top: -40px;
+  background-color: #fff;
+  padding: 42px 40px 42px 0;
+  border-radius: 6px;
+}
+
+#jobdetails .jobdetails-company img {
+  height: 140px;
+  width: 140px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding: 50px 30px;
+  border-radius: 6px 0 0 6px;
+}
+
+#jobdetails .jobdetails-company div {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 40px;
+}
+
+#jobdetails .jobdetails-position {
+  margin-top: 32px;
+  margin-bottom: 80px;
+  padding: 48px;
+  border-radius: 6px;
+  max-width: 1110px;
+  /* Output the numbers using the counter() function, but use a custom color, and position the numbers how we want */
+}
+
+#jobdetails .jobdetails-position .jobdetails-position-header {
+  position: relative;
+}
+
+#jobdetails .jobdetails-position .jobdetails-position-header .jobdetails-position-header-location {
+  font-weight: 700;
+  color: #5964e0;
+}
+
+#jobdetails .jobdetails-position .jobdetails-position-header a {
+  position: absolute;
+  right: 0;
+  top: 33%;
+}
+
+#jobdetails .jobdetails-position .jobdetails-desc {
+  margin-top: 40px;
+}
+
+#jobdetails .jobdetails-position h3 {
+  margin-top: 40px;
+  margin-bottom: 28px;
+}
+
+#jobdetails .jobdetails-position ol,
+#jobdetails .jobdetails-position ul {
+  margin-top: 24px;
+}
+
+#jobdetails .jobdetails-position ul {
+  list-style: none;
+  /* Remove default bullets */
+  padding-left: 16px;
+}
+
+#jobdetails .jobdetails-position ul li {
+  color: #6e8098;
+  padding: 6px 0;
+}
+
+#jobdetails .jobdetails-position ul li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #5964e0;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
+
+#jobdetails .jobdetails-position ol li {
+  counter-increment: list;
+  list-style-type: none;
+  position: relative;
+  margin-left: 16px;
+  padding: 6px 0;
+  padding-left: 26px;
+  color: #6e8098;
+}
+
+#jobdetails .jobdetails-position ol li:before {
+  color: #5964e0;
+  content: counter(list);
+  left: -32px;
+  position: absolute;
+  text-align: right;
+  width: 26px;
+}
+
+#jobdetails .jobdetails-applyfooter {
+  height: 96px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#jobdetails .jobdetails-applyfooter .jobdetails-applyfooter-container {
+  margin: 0 auto;
+  max-width: 730px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#jobdetails .jobdetails-applyfooter .jobdetails-applyfooter-position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (max-width: 425px) {
+  #jobdetails .jobdetails-company {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 230px;
+    margin-top: -15px;
+    padding: 0 0 32px 0;
+    border-radius: 6px;
+    text-align: center;
+  }
+  #jobdetails .jobdetails-company img {
+    height: 50px;
+    width: 50px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    padding: 19px 5px;
+    border-radius: 6px;
+    margin-top: -25px;
+  }
+  #jobdetails .jobdetails-company div {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-left: 0px;
+    padding-top: 24px;
+  }
+  #jobdetails .jobdetails-position {
+    margin-top: 32px;
+    margin-bottom: 80px;
+    padding: 48px;
+    border-radius: 6px;
+  }
+  #jobdetails .jobdetails-position .jobdetails-position-header {
+    position: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #jobdetails .jobdetails-position .jobdetails-position-header h1 {
+    font-size: 20px;
+  }
+  #jobdetails .jobdetails-position .jobdetails-position-header .jobdetails-position-header-location {
+    font-weight: 700;
+    color: #5964e0;
+  }
+  #jobdetails .jobdetails-position .jobdetails-position-header a {
+    position: initial;
+    padding-top: 50px;
+  }
+  #jobdetails .jobdetails-position .jobdetails-position-header a button {
+    width: 100%;
+  }
+  #jobdetails .jobdetails-applyfooter {
+    padding: 25px;
+  }
+  #jobdetails .jobdetails-applyfooter .jobdetails-applyfooter-container .jobdetails-applyfooter-position {
+    display: none;
+  }
+  #jobdetails .jobdetails-applyfooter .jobdetails-applyfooter-container a {
+    width: 100%;
+  }
+  #jobdetails .jobdetails-applyfooter .jobdetails-applyfooter-container a .applyfooter-btn {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=JobDetails.css.map */
