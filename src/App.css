@@ -69,6 +69,10 @@ p {
   background-color: #f4f6f8;
 }
 
+#light .jobcard {
+  background-color: #fff;
+}
+
 #light .button2 {
   background-color: #5964e010;
   padding: 16px 40px;
@@ -142,6 +146,14 @@ p {
 
 #dark {
   background-color: #121721;
+}
+
+#dark .jobcard {
+  background-color: #19202d;
+}
+
+#dark .jobcard h3 {
+  color: #fff;
 }
 
 #dark .button2 {
