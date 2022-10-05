@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Route, Routes, useParams } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import jobs from "./data";
 import NavBar from "./Components/NavBar/NavBar";
@@ -41,8 +41,9 @@ const App = () => {
       if ((formattedTitle.includes(genericSearch) || formattedCompany.includes(genericSearch)) && formattedLocation.includes(locationSearch)) {
         if (isFullTimeOnly) {
           if (job.contract === "Full Time") return job;
+          else return null;
         } else return job;
-      }
+      } else return null;
     });
     setFilteredJobs(searchedJobs);
   }
