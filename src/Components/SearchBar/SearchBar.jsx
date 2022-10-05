@@ -18,7 +18,7 @@ const SearchBar = ({ searchJobs }) => {
 
   return (
     <div className="search-container">
-      {dimensions.width < 475 && (
+      {dimensions.width < 650 && (
         <MobileSearchBar
           genericSearch={genericSearch}
           setGenericSearch={setGenericSearch}
@@ -29,7 +29,7 @@ const SearchBar = ({ searchJobs }) => {
           searchJobs={searchJobs}
         />
       )}
-      {dimensions.width >= 475 && (
+      {dimensions.width >= 650 && (
         <DesktopSearchBar
           genericSearch={genericSearch}
           setGenericSearch={setGenericSearch}
