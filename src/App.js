@@ -8,7 +8,7 @@ import JobDetails from "./Components/JobDetails/JobDetails";
 
 const App = () => {
   let savedTheme = localStorage.getItem("dev-jobs-theme");
-  if (savedTheme === undefined) savedTheme = "light";
+  if (savedTheme === null) savedTheme = "light";
 
   const [theme, setTheme] = useState(savedTheme);
   const [filteredJobs, setFilteredJobs] = useState(jobs);
