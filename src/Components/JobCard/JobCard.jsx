@@ -6,7 +6,7 @@ const JobCard = ({ job }) => {
     <Link className="jobcard-link" to={`/jobs/${job.id}`}>
       <div className="jobcard">
         <div className="jobcard-img" style={{ backgroundColor: logoBackground }}>
-          <img src={logo} />
+          <img src={logo} alt={`${company} Logo`} />
         </div>
         <div className="jobcard-contents">
           <p>
